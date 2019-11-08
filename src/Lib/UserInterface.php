@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace MeiQuick\Rpc\Lib;
 
@@ -10,40 +10,96 @@ namespace MeiQuick\Rpc\Lib;
 interface UserInterface
 {
     /**
-     * @param int $id
-     * @param mixed $type
-     * @param int $count
-     *
      * @return array
      */
-    public function getList(int $id, $type, int $count = 10): array;
+    public function registerByEmail(): array;
 
     /**
-     * @param int $id
-     *
-     * @return bool
+     * @return array
      */
-    public function delete(int $id): bool;
+    public function registerByMobile(): array;
 
     /**
-     * @return string
+     * @return array
      */
-    public function getBigContent(): string;
+    public function login(): array;
 
     /**
-     * @return void
+     * @return array
      */
-    public function returnNull(): void;
+    public function resetPassword(): array;
 
     /**
-     * Exception
+     * @return array
      */
-    public function exception(): void;
+    public function getEmailVerifyCode(): array;
 
     /**
-     * @param string $content
-     *
-     * @return int
+     * @return array
      */
-    public function sendBigContent(string $content): int;
+    public function getMobileVerifyCode(): array;
+
+    /**
+     * @return array
+     */
+    public function getVerifyCode(): array;
+
+    //需要登录功能
+    /**
+     * @return array
+     */
+    public function infoIndex(): array;
+
+    /**
+     * @return array
+     */
+    public function editEmail(): array;
+
+    /**
+     * @return array
+     */
+    public function editMobile(): array;
+
+    /**
+     * @return array
+     */
+    public function bindEmail(): array;
+
+    /**
+     * @return array
+     */
+    public function bindMobile(): array;
+
+    /**
+     * @return array
+     */
+    public function editUserInfo(): array;
+
+    /**
+     * @return array
+     */
+    public function editPassword(): array;
+
+    /**
+     * @return array
+     */
+    public function getFormToken(): array;
+
+    /**
+     * @param array $param
+     * @return array
+     */
+    public function addReceiveAddress(array $param): array;
+
+    /**
+     * @param array $param
+     * @return array
+     */
+    public function editReceiveAddress(array $param): array;
+
+    /**
+     * @param array $param
+     * @return array
+     */
+    public function deleteReceiveAddress(array $param): array;
 }
