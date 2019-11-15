@@ -33,6 +33,12 @@ interface UserInterface
      * @param array $param
      * @return array
      */
+    public function logout(array $param): array;
+
+    /**
+     * @param array $param
+     * @return array
+     */
     public function resetPassword(array $param): array;
 
     /**
@@ -40,20 +46,20 @@ interface UserInterface
      * @return array
      */
     public function getEmailVerifyCode(array $param): array;
-    
+
     /**
      * @param array $param
      * @return array
      */
     public function getMobileVerifyCode(array $param): array;
-    
+
     /**
      * @param array $param
      * @return array
      */
     public function getVerifyCode(array $param): array;
-    
-    
+
+
     //需要验证登录
         /**
      * @param array $param
@@ -66,31 +72,31 @@ interface UserInterface
      * @return array
      */
     public function editEmail(array $param): array;
-    
+
     /**
      * @param array $param
      * @return array
      */
     public function editMobile(array $param): array;
-    
+
     /**
      * @param array $param
      * @return array
      */
     public function bindEmail(array $param): array;
-    
+
     /**
      * @param array $param
      * @return array
      */
     public function bindMobile(array $param): array;
-    
+
     /**
      * @param array $param
      * @return array
      */
     public function editUserInfo(array $param): array;
-    
+
     /**
      * @param array $param
      * @return array
@@ -124,4 +130,11 @@ interface UserInterface
      * @return array
      */
     public function deleteReceiveAddress(array $param): array;
+
+    /**
+     * 获取收货地址
+     * @param array $param
+     * @return array
+     */
+    public function getReceiveAddress(array $param): array;
 }
