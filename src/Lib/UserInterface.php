@@ -141,5 +141,5 @@ interface UserInterface
      * @param array $param
      * @return array
      */
-    public function setDefaultAddress(array $param): array; 
+    public function setDefaultAddress(array $param): array;
 }
