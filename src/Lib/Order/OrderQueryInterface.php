@@ -37,4 +37,32 @@ interface OrderQueryInterface
      */
     public function getAfterSalesList(array $data): array;
 
+    /**
+     * 获取商品分类
+     * @param array $data
+     * @return array
+     */
+    public function getCategoryList(array $data): array;
+
+    /**
+     * 获取站点增值服务
+     * @param array $data
+     * @return array
+     */
+    public function getServiceList(array $data): array;
+
+    /**
+     * 获取国内站点列表
+     * @param array $data
+     * @return array
+     */
+    public function getReceiveStationList(array $data): array;
+
+    /**
+     * 获取国外站点列表
+     * @param array $data
+     * @return array
+     */
+    public function getCollectStationList(array $data): array;
+
 }

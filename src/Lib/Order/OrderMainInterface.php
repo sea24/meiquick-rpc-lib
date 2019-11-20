@@ -44,4 +44,11 @@ interface OrderMainInterface
      */
     public function orderDelete(array $data): array;
 
+    /**
+     * 修改订单
+     * @param array $data
+     * @return array
+     */
+    public function orderEdit(array $data): array;
+
 }

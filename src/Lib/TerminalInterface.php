@@ -22,13 +22,20 @@ interface TerminalInterface
      * @return array
      */
     public function logout(array $param): array;
-    
+
     /**
      * 获取订单数据
      * @param array $param
      * @return array
      */
     public function getOrder(array $param): array;
+
+    /**
+     * 获取订单审核记录
+     * @param array $param
+     * @return array
+     */
+    public function getOrderExamine(array $param): array;
 
     /**
      * 审核
@@ -43,14 +50,14 @@ interface TerminalInterface
      * @return array
      */
     public function weighing(array $param): array;
-    
+
     /**
      * 获取起始站点
      * @param array $param
      * @return array
      */
     public function getDeliverFrom(array $param): array;
-    
+
     /**
      * 获取目的地站点数据
      * @param array $param
@@ -64,28 +71,28 @@ interface TerminalInterface
      * @return array
      */
     public function createLading(array $param): array;
-    
+
     /**
      * 获取路单信息
      * @param array $param
      * @return array
      */
     public function getExportLading(array $param): array;
-    
+
     /**
      * 删除路单
      * @param array $param
      * @return array
      */
     public function deleteExportLading(array $param): array;
-    
+
     /**
      * 打印面单
      * @param array $param
      * @return array
      */
     public function printOrder(array $param): array;
-    
+
     /**
      * 打印路单
      * @param array $param
@@ -93,4 +100,17 @@ interface TerminalInterface
      */
     public function printExportLading(array $param): array;
 
+    /**
+     * 获取终端机设备信息
+     * @param array $param
+     * @return array
+     */
+    public function selfTerminal(array $param): array;
+
+    /**
+     * 获取运费和实际扣费
+     * @param array $param
+     * @return array
+     */
+    public function getFreight(array $param): array;
 }
