@@ -30,4 +30,11 @@ interface PdaUserInterface
      */
     public function handleList(array $data): array;
 
+    /**
+     * 检查更新
+     * @param array $data
+     * @return array
+     */
+    public function updateCheck(array $data): array;
+
 }

@@ -65,4 +65,18 @@ interface OrderQueryInterface
      */
     public function getCollectStationList(array $data): array;
 
+    /**
+     * 确认订单 - 获取信息
+     * @param array $data
+     * @return array
+     */
+    public function checkGetInfo(array $data): array;
+
+    /**
+     * 导出订单信息
+     * @param array $data
+     * @return mixed
+     */
+    public function exportOrderList(array $data);
+
 }

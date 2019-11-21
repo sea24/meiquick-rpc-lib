@@ -44,4 +44,22 @@ interface PayInterface
      * @return mixed
      */
     public function wxpayNotify(array $xml);
+    
+    /**
+     * @param array $params
+     * @return array
+     */
+    public function tradeTypeList(array $params): array;
+
+    /**
+     * @param array $params
+     * @return array
+     */
+    public function payTypeList(array $params): array;
+
+    /**
+     * @param array $params
+     * @return array
+     */
+    public function rechargeResult(array $params): array;
 }
