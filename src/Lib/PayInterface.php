@@ -24,14 +24,16 @@ interface PayInterface
     public function recharge(array $params): array;
 
     /**
+     * @param array $params
      * @return array
      */
-    public function consume(): array;
+    public function consume(array $params): array;
 
     /**
+     * @param array $params
      * @return array
      */
-    public function refund(): array;
+    public function refund(array $params): array;
 
     /**
      * @param array $params

@@ -113,4 +113,11 @@ interface TerminalInterface
      * @return array
      */
     public function getFreight(array $param): array;
+
+    /**
+     * 修改订单为已收件
+     * @param array $param
+     * @return array
+     */
+    public function setOrderAccepted(array $param): array;
 }
