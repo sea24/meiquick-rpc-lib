@@ -51,4 +51,11 @@ interface OrderMainInterface
      */
     public function orderEdit(array $data): array;
 
+    /**
+     * 保存订单凭证
+     * @param array $data
+     * @return array
+     */
+    public function invoiceSave(array $data): array;
+
 }

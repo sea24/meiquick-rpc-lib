@@ -64,4 +64,10 @@ interface PayInterface
      * @return array
      */
     public function rechargeResult(array $params): array;
+
+    /**
+     * @param array $params
+     * @return mixed
+     */
+    public function export(array $params);
 }
