@@ -79,4 +79,11 @@ interface OrderQueryInterface
      */
     public function exportOrderList(array $data);
 
+    /**
+     * 物流查询接口
+     * @param array $data
+     * @return array
+     */
+    public function expressInfo(array $data): array;
+
 }

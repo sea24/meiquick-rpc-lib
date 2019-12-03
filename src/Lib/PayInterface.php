@@ -69,5 +69,5 @@ interface PayInterface
      * @param array $params
      * @return mixed
      */
-    public function export(array $params);
+    public function export(array $params): array;
 }
