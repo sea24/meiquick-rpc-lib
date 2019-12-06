@@ -33,6 +33,12 @@ interface PayInterface
      * @param array $params
      * @return array
      */
+    public function fillBuckle(array $params): array;
+
+    /**
+     * @param array $params
+     * @return array
+     */
     public function refund(array $params): array;
 
     /**
