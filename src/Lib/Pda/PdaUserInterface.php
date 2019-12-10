@@ -37,4 +37,18 @@ interface PdaUserInterface
      */
     public function updateCheck(array $data): array;
 
+    /**
+     * 注册
+     * @param array $data
+     * @return array
+     */
+    public function register(array $data): array;
+
+    /**
+     * 获取图片验证码
+     * @param array $data
+     * @return array
+     */
+    public function getCaptcha(array $data): array;
+
 }
