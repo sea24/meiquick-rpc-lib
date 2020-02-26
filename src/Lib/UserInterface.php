@@ -116,11 +116,25 @@ interface UserInterface
     public function getReceiveAddress(array $param): array;
 
     /**
-     * 获取地区下拉框
+     * 获取国家列表
+     * @param array $param
+     * @return array
+     */
+    public function getCountryList(array $param): array;
+
+    /**
+     * 获取美国地区下拉框
      * @param array $param
      * @return array
      */
     public function getUsdDistrict(array $param): array;
+
+    /**
+     * 获取中国地区下拉框
+     * @param array $param
+     * @return array
+     */
+    public function getChinaDistrict(array $param): array;
 
     /**
      * 获取默认地址
